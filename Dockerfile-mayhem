@@ -14,4 +14,4 @@ RUN make
 
 # Package Stage
 FROM debian:bookworm-slim
-COPY from=builder /vip-manager/vip-manager /
+COPY --from=builder /vip-manager/vip-manager /
