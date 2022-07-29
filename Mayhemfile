@@ -1,12 +1,8 @@
 # Namespaced project name that the target belongs to
-project: bmwtsn098/vip-manager
+project: vip-manager
 
 # Target name (should be unique within the project)
 target: vip-manager
-
-# Base image to run the binary in.
-image: ghcr.io/bmwtsn098/vip-manager:latest
-duration: 300
 
 # List of commands used to test the target
 cmds:
@@ -14,5 +10,4 @@ cmds:
     # Command used to start the target, "@@" is the input file
     # (when "@@" is omitted Mayhem defaults to stdin inputs)
     - cmd: ./vip-manager --config @@
-      filepath: ./fuzztest.yml
     
