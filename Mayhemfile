@@ -9,5 +9,5 @@ cmds:
 
     # Command used to start the target, "@@" is the input file
     # (when "@@" is omitted Mayhem defaults to stdin inputs)
-    - cmd: ./vip-manager --config @@
+    - cmd: ./vip-manager --config ./fuzztest.yml
       filepath: ./fuzztest.yml
